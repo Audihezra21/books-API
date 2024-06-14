@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/**/*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/getBooks", "dest": "/api/getBooks.js" },
+      { "src": "/api/insertBook", "dest": "/api/insertBook.js" },
+      { "src": "/api/updateBook", "dest": "/api/updateBook.js" },
+      { "src": "/api/deleteBook", "dest": "/api/deleteBook.js" }
+    ]
+  }
+  
